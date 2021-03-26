@@ -12,7 +12,7 @@ resource "aws_vpc" "demo" {
     Name = "demo-vpc"
   }
 }
-resource "aws_subnet" "demo" {
+resource "aws_subnet" "demo1" {
   vpc_id     = aws_vpc.demo.id
   cidr_block = "77.66.1.0./28"
 
@@ -20,7 +20,7 @@ resource "aws_subnet" "demo" {
     Name = "subnet1"
   }
 }
-resource "aws_subnet" "demo" {
+resource "aws_subnet" "demo1" {
   vpc_id     = aws_vpc.demo.id
   cidr_block = "77.66.1.16./28"
 
