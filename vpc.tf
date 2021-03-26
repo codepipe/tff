@@ -47,3 +47,6 @@ resource "aws_route_table" "Pu_RT" {
     Name = "massian"
   }
 }
+resource "aws_route_table" "Private-RT" {
+  vpc_id = aws_vpc.demo.id
+  }
