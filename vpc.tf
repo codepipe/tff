@@ -27,4 +27,11 @@ resource "aws_subnet" "demo2" {
   tags = {
     Name = "subnet2"
   }
-}  
+}
+resource "aws_internet_gateway" "massgw" {
+  vpc_id = aws_vpc.main.id
+
+  tags = {
+    Name = "mass"
+  }
+}
