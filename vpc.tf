@@ -39,11 +39,11 @@ resource "aws_route_table" "Pu_RT" {
   vpc_id = aws_vpc.demo.id
 
   route {
-    cidr_block = "10.0.1.0/24"
+    cidr_block = "70.0.1.0/28"
     gateway_id = aws_internet_gateway.massgw.id
   }
 
   tags = {
-    Name = "main"
+    Name = "massian"
   }
 }
