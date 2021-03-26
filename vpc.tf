@@ -20,7 +20,7 @@ resource "aws_subnet" "demo1" {
     Name = "subnet1"
   }
 }
-resource "aws_subnet" "demo1" {
+resource "aws_subnet" "demo2" {
   vpc_id     = aws_vpc.demo.id
   cidr_block = "77.66.1.16./28"
 
