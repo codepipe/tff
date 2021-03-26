@@ -13,18 +13,18 @@ resource "aws_vpc" "demo" {
   }
 }
 resource "aws_subnet" "demo" {
-vpc_id ="${aws_vpc.demo.id}"
-cidr_block ="77.66.1.0./28"
-  
+  vpc_id     = aws_vpc.demo.id
+  cidr_block = "77.66.1.0./28"
+
   tags = {
-   Name = "subnet1"
-   }
+    Name = "subnet1"
+  }
 }
 resource "aws_subnet" "demo" {
-vpc_id     ="${aws_vpc.demo.id}"
-cidr_block ="77.66.1.16./28"
-  
+  vpc_id     = aws_vpc.demo.id
+  cidr_block = "77.66.1.16./28"
+
   tags = {
-   Name = "subnet2"
-   }
+    Name = "subnet2"
+  }
 }  
