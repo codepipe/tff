@@ -8,6 +8,7 @@
       path: /opt/ansible.txt
       state: touch 
       
-  - name: To check the file existance
-    shell: if ["/opt/" ]; 
-    register: file_exists
+  - name: Task name
+    stat:
+      path: /opt/
+    register: register_name
