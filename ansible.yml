@@ -9,5 +9,5 @@
       state: touch 
       
   - name: To check the file existance
-    shell: if [[ -d  "/opt" ]]; then echo "true";  fi
+    shell: if ["/opt/" ]; 
     register: file_exists
